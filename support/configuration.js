@@ -1,11 +1,11 @@
 module.exports = {
   clients: [
-    // {
-    //   client_id: 'oidcCLIENT',
-    //   client_secret: '...',
-    //   grant_types: ['refresh_token', 'authorization_code'],
-    //   redirect_uris: ['http://sso-client.dev/providers/7/open_id', 'http://sso-client.dev/providers/8/open_id'],
-    // }
+    {
+      client_id: 'localClient',
+      client_secret: 'TQV5U29k1gHibH5bx1layBo0OSAvAbRT3UYW3EWrSYBB5swxjVfWUa1BS8lqzxG/0v9wruMcrGadany3',
+      grant_types: ['authorization_code'],
+      redirect_uris: ['http://localhost:4444/callback'],
+    }
   ],
   interactions: {
     url(ctx, interaction) { // eslint-disable-line no-unused-vars
